@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="#" >
+                <img src="assets/book-logo.svg" 
+                    class="logo__img"
+                    alt="logo image: a book with a door and window, it looks like a house."
+                    width="100px"
+                    height="auto">
+            </a>
+            <a href="#" class="logo__text">
+                <img src="assets/logo-text-900.svg"
+                class="logo__text"
+                width="150px"
+                height="auto">
+            </a>
+        </div>  
+    </header>
+    <div class="new-book">
+        <button type="button" class="new-book" title="Add new book">
+            <img src="assets/noun-add-book-5956032.svg"
+                width="40px"
+                height="auto"
+                id="new-book-img">
+        </button>
+    </div>
+    <main>
+
+    </main>
+    <aside class="new-book__form closed" >
+        <button type="button" class="close-form">
+            <img src="assets/x.svg" width="20px" height="auto">
+        </button>
+        <form action="#" method="post" id="form">
+            <label for="book-title" class="input-label">Title *</label>
+            <span></span>
+            <input type="text" name="book-title" id="book-title" required maxlength="125">
+
+            <label for="book-author" class="input-label">Author *</label>
+            <span></span>
+            <input type="text" name="book-author" id="book-author" required maxlength="50">
+
+            <label for="book-pages" class="input-label">Number of pages</label>
+            <input type="number" name="book-pages" id="book-pages">
+
+            <p>Have you read this book? *</p>
+            <span></span>
+            <ul>
+                <li>
+                    <input type="radio" name="book-read" id="book-read__true" value="1" required>
+                    <label for="book-read__true" class="radio-label">Yes</label>
+                </li>
+                <li>
+                    <input type="radio" name="book-read" id="book-read__false" value="0" required>
+                    <label for="book-read__false" class="radio-label">No</label>
+                </li>
+            </ul>
+
+            <button type="submit" class="submit">Add book</button>
+        </form>
+    </aside>
+    <script src="scripts.js"></script>
+</body>
+</html>
