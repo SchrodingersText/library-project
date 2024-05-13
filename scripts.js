@@ -86,9 +86,9 @@ function displayLibrary() {
         bookRead.classList.add('read-button');
         bookRemove.setAttribute('class', 'remove-book');
         bookRemove.setAttribute('title', 'Remove book');
-        iconRemove.setAttribute('width', '20px');
+        iconRemove.setAttribute('width', '40px');
         iconRemove.setAttribute('id', 'remove-button');
-        iconFav.setAttribute('width', '20px');
+        iconFav.setAttribute('width', '40px');
         iconFav.setAttribute('id', 'fav-button');
 
         // Give card a data attribute referring to its myLibrary index
